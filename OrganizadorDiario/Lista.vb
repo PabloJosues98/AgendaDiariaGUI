@@ -1,6 +1,7 @@
 ﻿Public Class Lista
     Private primero As Nodo
     Private ultimo As Nodo
+
     Public Sub Init()
         Me.primero = Nothing
         Me.ultimo = Nothing

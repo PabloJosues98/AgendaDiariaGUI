@@ -4,6 +4,7 @@
     Private hora As Integer
     Private minuto As Integer
     Private tiempo As Boolean = False
+
     Private Sub CboTipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboTipo.SelectedIndexChanged
         If cboTipo.SelectedIndex = 3 Then
             txtTipo.Visible = True
@@ -13,7 +14,6 @@
             txtTipo.Visible = False
             lblTipoPersonalizado.Visible = False
         End If
-
     End Sub
 
     Private Sub Ingresar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -46,7 +46,6 @@
     End Sub
 
     Private Sub CmdIngresarTarea_Click(sender As Object, e As EventArgs) Handles cmdIngresarTarea.Click
-
         Dim tipo As String = ""
         Dim descrip As String
         Dim horaLimite As String = ""
@@ -71,8 +70,6 @@
             End If
         End If
 
-
-
         If err = True Then
             MessageBox.Show("error al ingresar la hora, formato correto 23:59")
         Else
@@ -93,12 +90,9 @@
                 err = False
                 tiempo = False
             Catch ex As Exception
-                MessageBox.Show("error ativa try: " & ex.ToString)
+                MessageBox.Show("error: " & ex.ToString)
             End Try
-
         End If
-
-
     End Sub
 
     Private Sub CboPrioridad_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboPrioridad.SelectedIndexChanged

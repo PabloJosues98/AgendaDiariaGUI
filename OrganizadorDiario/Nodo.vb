@@ -8,5 +8,4 @@
         Me.sig = Nothing
         Me.ant = Nothing
     End Sub
-
 End Class

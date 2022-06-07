@@ -1,10 +1,5 @@
 ﻿Public Class PantallaInicio
-    'Public Shared evento As Evento
-    'Public eventos As List(Of Evento)
     Public Shared listaEvento As New Lista
-
-
-
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Ingresar.Click
         Dim frmIngresar As New IngresarTarea()
